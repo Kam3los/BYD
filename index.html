@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barnyard</title>
+    <link rel="icon" href="imgs/logo.png" type="image/png">
+    <style>
+        @font-face {
+            font-family: 'BuzzHeavier';
+            src: url('imgs/BuzzHeavier.ttf') format('truetype');
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('imgs/screen.png') no-repeat center center;
+            background-size: cover;
+            margin: 0;
+        }
+        .button {
+            width: 600px;
+            height: 240px;
+            background: url('imgs/button.png') no-repeat center center;
+            background-size: contain;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button span {
+            font-family: 'BuzzHeavier', sans-serif;
+            font-size: 72px;
+            color: yellow;
+            text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black, 4px 4px 0 black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <img src="imgs/logo.png" alt="Barnyard Logo" width="150">
+    <button class="button" onclick="window.location.href='https://example1.com'">
+        <span>BuzzHeavier</span>
+    </button>
+    <button class="button" onclick="window.location.href='https://example2.com'">
+        <span>Gofile</span>
+    </button>
+</body>
+</html>
